@@ -1,5 +1,5 @@
 //import the component from react
-import { Component } from 'react';
+//import { Component } from 'react';
 import { useState } from 'react';
 import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
@@ -27,7 +27,7 @@ export const App = () => {
     return good + neutral + bad;
   };
   const countPositiveFeedbackPercentage = () => {
-    const { good, neutral, bad } = feedback;
+    const { good } = feedback;
     const total = countTotalFeedback();
 
     // if total is greater than 0, return the positive percentage, else 0
